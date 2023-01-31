@@ -1,3 +1,3 @@
  # Práctica 0
 
-prueba comit*
+prueba comit
