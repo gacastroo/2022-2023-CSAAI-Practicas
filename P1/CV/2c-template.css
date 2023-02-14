@@ -6,18 +6,29 @@
   }
   
 /* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
+body {
+  background-image: url('img_girl.jpg');
+  background-size: 100%;
+}
 .columna {
 float: left;
 padding: 10px;
-min-height: 500px;
+min-height: 700px;
 }
 
 .izquierda {
-width: 45%;
+padding: 10px;
+width: 15%;
+border: 10px solid #b04973;
+border-radius: 1em;
 }
 
 .derecha {
-width: 40%;
+padding: 10px;
+width: 60%;
+outline: 10px solid #b04973;
+border-bottom-right-radius: 6.75% 30%;
+border-radius: 0.1em;
 }
 
 /* Clear floats despues de las columnas para eliminar la superposición */
@@ -27,12 +38,12 @@ display: table;
 clear: both;
 }
 
-#c1 {
-    background-color:rgb(255, 255, 255);
+#c1 {    
+
 }
 
 #c2 {
-    background-color:rgb(255, 255, 255);
+
 }
 
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
@@ -41,12 +52,15 @@ clear: both;
 img {
     width: 100%;
     height: auto;
+    opacity: 100%;
+    padding-bottom: 10px;
 }
 
 .iresponsive {
     padding: 0 6px;
     float: left;
-    width: 50%;
+    width: auto;
+    border-radius: 10px;
   }
 
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
