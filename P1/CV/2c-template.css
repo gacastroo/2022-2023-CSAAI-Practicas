@@ -57,8 +57,10 @@ clear: both;
   padding: 30px;
   outline-offset: -15px;
   outline: 10px solid #2d3142;
-
-  border-radius: 1em;
+  border-bottom-right-radius: 17%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius:2%;
 }
 
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
