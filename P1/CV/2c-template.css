@@ -18,6 +18,13 @@ width: 15%;
 
 .derecha {
 width: 60%;
+border-right: 1em;
+}
+
+h2 {
+  background-color: rgba(0, 255, 115, 0.349);
+  border-radius: 2px;
+  outline: #b04973 3px;
 }
 
 /* Clear floats despues de las columnas para eliminar la superposición */
