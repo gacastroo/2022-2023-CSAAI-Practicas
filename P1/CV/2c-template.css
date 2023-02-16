@@ -21,11 +21,16 @@ width: 60%;
 
 h2 {
   padding-left: 20px;
-  font-size: 20px;
   border: solid #2d3142 5px;
   font-family: 'Marvel', sans-serif;
   border-radius: 15px;
   background-color: #ef8354;
+}
+.textocc {
+  width: 75%;
+  font-size: 30px;
+  text-align: center;
+  font-size: 50px;
 }
 .textocd {
   font-size: 20px;
@@ -87,6 +92,11 @@ img {
     }
     .iresponsive {
         width: 100%;
+    }
+    .textocc {
+      font-size: 20px;
+      width: 100%;
+      margin-right: 10px;
     }
 }
 
