@@ -7,7 +7,6 @@
   
 /* Crear columnas de ancho diferente que se colocan una a continuación de la otra */
 body {
-  background-image: url('img_girl.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -18,14 +17,25 @@ width: 15%;
 
 .derecha {
 width: 60%;
-border-right: 1em;
 }
 
 h2 {
-  background-color: rgba(0, 255, 115, 0.349);
-  border-radius: 2px;
-  outline: #b04973 3px;
+  padding-left: 20px;
+  font-size: 20px;
+  border: solid #2d3142 5px;
+  font-family: 'Marvel', sans-serif;
+  border-radius: 15px;
+  background-color: #ef8354;
 }
+.textocd {
+  font-size: 20px;
+  font-family: 'Marvel', sans-serif;
+  font-weight: bold;
+  border: solid #2d3142 5px;
+  border-radius: 15px;
+  background-color: #ef8354;
+  padding-left: 20px;
+  }
 
 /* Clear floats despues de las columnas para eliminar la superposición */
 .filla:after {
@@ -37,16 +47,17 @@ clear: both;
 #c1 {
   float:left;
   padding: 10px;
-  border: 10px solid #b04973;
+  border: 10px solid #2d3142;
   border-radius: 1em;
   }
 
 #c2 {
+  margin-left: 5px;
   float: left;
-  padding: 25px;
+  padding: 30px;
   outline-offset: -15px;
-  outline: 10px solid #b04973;
-  border-bottom-right-radius: 6.75% 30%;
+  outline: 10px solid #2d3142;
+
   border-radius: 1em;
 }
 
@@ -54,12 +65,13 @@ clear: both;
 /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
 
 img {
-    padding-bottom: 10px;
     width: 100%;
     height: auto;
 }
 .profile {
   border-radius: 50%;
+  border: solid #2d3142 5px;
+  margin-bottom: 15px;
   }
 
 
@@ -71,7 +83,6 @@ img {
     .columna {
       width: 100%;
     }
-
     .iresponsive {
         width: 100%;
     }
