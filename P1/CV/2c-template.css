@@ -10,6 +10,8 @@ body {
   background-repeat: no-repeat;
   background: cover;
   }
+  
+
 
 
 .textocc, .textocd, .textoci{
@@ -51,6 +53,7 @@ clear: both;
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius:15px;
+  background-color: whitesmoke;
 }
 
 #c2 {
@@ -60,6 +63,7 @@ clear: both;
   border: 5px solid #2d3142;
   border-bottom-right-radius: 2%;
   border-top-right-radius: 2%;
+  background-color: whitesmoke;
 }
 
 
@@ -76,8 +80,6 @@ img {
   border: solid #2d3142 5px;
   margin-bottom: 15px;
   margin-top: 15px;
-  filter: brightness(1.2);
-  mix-blend-mode: multiply;
   }
 
 
@@ -104,8 +106,8 @@ img {
       margin-top: 5px;
     }
     body {
-      background-image: url('profile2.jpeg');
-      background-repeat: Srepeat;
-      background: absolute;
+      background-image: url('295692.jpg');
+      background-repeat: no-repeat;
+      background: cover;
       }
 }
