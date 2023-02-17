@@ -53,7 +53,6 @@ clear: both;
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius:15px;
-  background-color: whitesmoke;
 }
 
 #c2 {
@@ -63,7 +62,6 @@ clear: both;
   border: 5px solid #2d3142;
   border-bottom-right-radius: 2%;
   border-top-right-radius: 2%;
-  background-color: whitesmoke;
 }
 
 
@@ -96,18 +94,17 @@ img {
       font-size: 20px;
       width: 100%;
     }
-    style {
-      background-size: absolute;
-      background-repeat: no-repeat;
+    .profile{
+      filter:brightness(1.2)
     }
     #c2, #c1{
       width: 100%;
       border-radius: 12px;
       margin-top: 5px;
+      background-color: white;
     }
+   
     body {
-      background-image: url('295692.jpg');
-      background-repeat: no-repeat;
-      background: cover;
+      background:#bfc0c0;
       }
 }
