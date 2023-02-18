@@ -1,6 +1,7 @@
 /* https://www.w3schools.com/howto/howto_css_two_columns.asp */
 /* https://developer.mozilla.org/es/docs/Web/CSS/box-sizing */
 /* Así definimos el comportamiento de caja para todos los elementos */
+
 * {
     box-sizing: border-box;
   }
@@ -12,12 +13,10 @@ body {
   }
   
 
-
-
-.textocc, .textocd, .textoci{
+.Encabezado, .Texto{
   border: solid #2d3142 5px;
   font-family: 'Marvel', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   border-radius: 15px;
@@ -26,20 +25,16 @@ body {
 }
 
 /*Texto Columna centro, ancho de borde, tamaño de letra, alinear al centro*/
-.textocc {
+.Encabezado {
   margin-top: 10px;
   width: 75%;
   font-size: 17px;
 }
-/*Texto columna derecha, tamaño de letra*/
-.textocd {
-  width: 100%;
-  }
 
 
 
 /* Clear floats despues de las columnas para eliminar la superposición */
-.fila:after {
+.filla:after {
 content: "";
 display: table;
 clear: both;
@@ -65,6 +60,7 @@ clear: both;
 }
 
 
+
 /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
 /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
 
@@ -80,6 +76,16 @@ img {
   margin-top: 15px;
   }
 
+      
+  footer{
+    align-self: flex-end;
+    margin:10px;
+    padding: 0px;
+    text-align: center;
+    margin-right: 50px;
+    opacity: 50%;
+   }
+
 
 
 
@@ -90,7 +96,7 @@ img {
     .iresponsive {
         width: 100%;
     }
-    .textocc {
+    .Encabezado {
       font-size: 20px;
       width: 100%;
     }
@@ -101,6 +107,7 @@ img {
       width: 100%;
       border-radius: 12px;
       margin-top: 5px;
+      margin-bottom: 5px;
       background-color: white;
     }
    
