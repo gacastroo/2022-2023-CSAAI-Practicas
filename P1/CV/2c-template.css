@@ -16,7 +16,7 @@ body {
 .Encabezado, .Texto{
   border: solid #2d3142 5px;
   font-family: 'Marvel', sans-serif;
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   border-radius: 15px;
@@ -27,7 +27,7 @@ body {
 /*Texto Columna centro, ancho de borde, tamaño de letra, alinear al centro*/
 .Encabezado {
   margin-top: 10px;
-  width: 75%;
+  width: 80%;
   font-size: 17px;
 }
 
@@ -41,13 +41,14 @@ clear: both;
 }
 
 #c1 {
-  width: 15%;
+  width: 20%;
   float:left;
   padding: 10px;
   border: 5px solid #2d3142;
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius:15px;
+  background-color: rgba(255, 0, 0, 0.096);
 }
 
 #c2 {
@@ -57,6 +58,13 @@ clear: both;
   border: 5px solid #2d3142;
   border-bottom-right-radius: 2%;
   border-top-right-radius: 2%;
+  background-color: rgba(255, 0, 0, 0.096);
+  
+}
+
+p, li {
+  font-size: 1.5em;
+  padding: 10px;
 }
 
 
@@ -69,10 +77,12 @@ img {
     height: auto;
     
 }
+
+
 .profile {
   border-radius: 50%;
   border: solid #2d3142 5px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-top: 15px;
   }
 
