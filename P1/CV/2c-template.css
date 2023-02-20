@@ -10,7 +10,6 @@ body {
   background-image: url('img_girl.jpg');
   background-repeat: no-repeat;
   background: cover;
-  word-wrap: break-word ;
   }
   
 
@@ -19,7 +18,6 @@ body {
   font-family: 'Marvel', sans-serif;
   font-size: 15px;
   font-weight: bold;
-  text-align: center;
   border-radius: 15px;
   background-color: #ef8354;
   text-align: center;
@@ -100,7 +98,7 @@ table {
 /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
 
 img {
-    width: 100%;
+    width: auto;
     height: auto;
     
 }
@@ -109,9 +107,8 @@ IMG.displayed {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
+  height: auto;
   width: auto;
-  overflow: hidden;
   }
 
 
@@ -167,4 +164,11 @@ IMG.displayed {
         height: 150px;
         width: auto;
         }
+ }
+
+ @media screen and (max-width: 1500px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
  }
