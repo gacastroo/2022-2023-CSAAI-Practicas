@@ -76,6 +76,7 @@ table {
   width: auto;
   margin: 10px auto;
   margin: 25px;
+  overflow: hidden;
   }
   
   table, td, th{
@@ -110,6 +111,7 @@ IMG.displayed {
   margin-right: auto;
   height: 300px;
   width: 1500px;
+  overflow: hidden;
   }
 
 
