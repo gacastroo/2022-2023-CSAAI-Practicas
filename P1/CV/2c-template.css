@@ -158,10 +158,3 @@ IMG.displayed {
         width: auto;
         }
  }
-
- @media screen and (max-width: 1860px) {
-  table {
-    display: block;
-    overflow-x: auto;
-  }
- }
