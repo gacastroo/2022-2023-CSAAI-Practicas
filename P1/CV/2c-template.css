@@ -56,8 +56,9 @@ clear: both;
   float: left;
   padding: 10px;
   border: 5px solid #2d3142;
-  border-bottom-right-radius: 2%;
-  border-top-right-radius: 2%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius:15px;
   background-color: rgba(255, 0, 0, 0.096);
   
 }
@@ -66,6 +67,17 @@ p, li {
   font-size: 1.5em;
   padding: 15px;
 }
+
+table {
+  border-collapse: collapse
+  }
+  
+  table, td, th{
+  margin: 15px;
+  border: 1px solid black;
+  background-color: #ef82542f;
+  }
+  
 
 
 
@@ -77,6 +89,14 @@ img {
     height: auto;
     
 }
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: auto;
+  }
 
 
 .profile {
@@ -93,7 +113,7 @@ img {
     padding: 0px;
     text-align: center;
     margin-right: 50px;
-    opacity: 50%;
+    opacity: 80%;
    }
 
 
@@ -109,9 +129,6 @@ img {
     .Encabezado {
       font-size: 20px;
       width: 100%;
-    }
-    .profile{
-      filter:brightness(1.2)
     }
     #c2, #c1{
       width: 100%;
