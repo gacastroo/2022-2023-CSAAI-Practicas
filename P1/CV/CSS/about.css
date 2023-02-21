@@ -6,8 +6,10 @@
     body {
 
      /* Ubicación de la imagen */
-
-    background-image: url(Background2.jpg);
+    background-image: url('Background21.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
     /* Para dejar la imagen de fondo centrada, vertical y
     horizontalmente */
@@ -17,8 +19,14 @@
     /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
     background-attachment: fixed;
     /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-    background-size: cover;
+    background-size: contain cover;
     /* Se muestra un color de fondo mientras se está cargando la imagen
     de fondo o si hay problemas para cargarla */
     background-color: #999;
     }
+  @media screen and (max-width: 620px) 
+  {
+  body{
+  background-image: url('Background22.jpg')
+  }
+  }
