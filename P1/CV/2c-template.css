@@ -42,6 +42,10 @@ clear: both;
 #c1 {
   width: 20%;
   float:left;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-right:0px;
+  margin-left: 5px;
   padding: 10px;
   border: 5px solid #2d3142;
   border-bottom-right-radius: 15px;
@@ -51,8 +55,12 @@ clear: both;
 }
 
 #c2 {
-  width: 60%;
+  width: 59.5%;
   float: left;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
   padding: 10px;
   border: 5px solid #2d3142;
   border-bottom-right-radius: 15px;
@@ -167,38 +175,50 @@ IMG.displayed {
 }
 
 .Encabezadotabla
-{
-    margin: 15px;
+{ 
+    margin: 10px;
     font-weight: bold;
     text-align: center;
+    width: 100%;
 }
 
 .CeldaMagneto,.CeldaLobezno,.CeldaGambito
-{
-    float:left;
+{   float:left;
     border: 4px solid #000000;
-    margin: 15px;
-    padding: 15px;
+    margin: 5px;
     width: 30%;
     text-align: center;
+}
+.CeldaMagneto
+{
+  margin-left: 25px;
 }
 
 .CeldacontenidoM,.CeldacontenidoL,.CeldacontenidoG{
     float:left;
     border: 4px solid #000000;
-    width: 31%;
+    width: 30%;
     height: 300px;
-    margin: 10px;
-    text-align: center;
-    padding-left: 15px;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+}
+
+.CeldacontenidoM
+{
+  margin-left: 35px;
 }
 
 .CeldafotoG,.CeldafotoL,.CeldafotoM{
     float:left;
     border: 4px solid #000000;
-    width: 31%;
+    width: 30%;
     height: 500px;
-    margin: 10px;
-    text-align: center;
-    padding-left: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.CeldafotoM
+{
+  margin-left:36px;
 }
