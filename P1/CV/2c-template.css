@@ -56,7 +56,6 @@ clear: both;
 
 #c2 {
   width: 59.5%;
-  height: 1820px;
   float: left;
   margin-top:5px;
   margin-bottom: 5px;
@@ -80,8 +79,11 @@ p, li {
 
 
   footer{
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
     text-align: center;
-    opacity: 80%;
    }
   
 
@@ -144,77 +146,6 @@ IMG.displayed {
      margin: 10px;
      width: 100%;
  }
- 
- .CeldaMagneto,.CeldaLobezno,.CeldaGambito
- {   float:left;
-     font-weight: bold;
-     text-align: center;
-     border: 4px solid #000000;
-     background-color: #ef8354;
-     margin: 5px;
-     width: 30%;
-     height: 90px;
-     text-align: center;
-     border-radius: 5%;
- }
- .CeldaMagneto
- {
-   margin-left: 25px;
- }
- 
- .CeldacontenidoM,.CeldacontenidoL,.CeldacontenidoG{
-     float:left;
-     border: 4px solid #000000;
-     width: 30%;
-     height: 450px;
-     padding: 5px;
-     margin: 5px;
-     text-align:left;
-     border-radius: 5%;
- }
- 
- .CeldacontenidoM
- {
-   margin-left: 35px;
- }
- 
- .CeldafotoG,.CeldafotoL,.CeldafotoM{
-     float:left;
-     width: 30%;
-     height: 200px;
-     padding: 10px;
-     margin: 5px;
-     border-radius: 5%;
- }
- 
- .CeldafotoM
- {
-   margin-left:36px;
- }
- 
- img.imgtmagneto{
-   height: 220px;
-   width: 200px;
-   border-radius: 50%;
-   border: solid #2d3142 5px;
-   box-shadow: 0 0 20px #000;
- }
- 
- img.imgtlobezno{
-   height: 220px;
-   width: 200px;
-   border-radius: 50%;
-   border: solid #2d3142 5px;
-   box-shadow: 0 0 20px #000;
- }
- 
- img.imgtgambito{
-   height: 220px;
-   width: 200;
-   border-radius: 50%;
-   border: solid #2d3142 5px;
-   box-shadow: 0 0 20px #000;
- }
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
@@ -226,7 +157,7 @@ IMG.displayed {
       font-size: 20px;
       width: 100%;
     }
-    #c2, #c1,#c3{
+    #c2, #c1{
       width: 100%;
       height: 100%;
       border-radius: 12px;
@@ -237,26 +168,5 @@ IMG.displayed {
     body {
       background:#bfc0c0;
       }
-
-    .CeldaLobezno,.CeldaMagneto,.CeldaGambito
-    {
-      margin:5px;
-      margin-left: 0px;
-      width: 220px;
-      height:100px;
-      
-    }
-    .CeldafotoG,.CeldafotoM,.CeldafotoL{
-      margin:25px;
-      margin-left: 10px;
-      width: 220px;
-      height:200px;
-    }
-    .CeldacontenidoG,.CeldacontenidoM,.CeldacontenidoL {
-      float: center;
-      margin: 5px;
-      width: 100%;
-      height:100%;
-    }
 
  }
