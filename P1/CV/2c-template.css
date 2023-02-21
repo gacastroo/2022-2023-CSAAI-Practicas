@@ -115,37 +115,8 @@ IMG.displayed {
   box-shadow: 0 0 20px #000;
   }
 
-.TituloMagneto {
-  float: left;
-  align-items: center;
-  margin-left: 10px;
-}
-.TituloLobezno{
-  float: center;
-}
-
-.TituloGambito{
-  float:right;
-}
  /*Tabla*/
 
- .Title
- {   margin-bottom: 15px;
-     border: 4px solid #000000;
-     text-align: center;
-     border: solid;
-     border-spacing: 15px;
-     font-weight: bold;
-     font-size: larger;
-     border-radius: 15px;
-     background-color: #ef8354;
- }
- 
- .Encabezadotabla
- { 
-     margin: 10px;
-     width: 100%;
- }
 /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
