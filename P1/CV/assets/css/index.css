@@ -78,6 +78,12 @@ p, li {
   padding: 3px;
 }
 
+.columnamentorMagneto,.columnamentorGambito,.columnamentorlobezno
+{
+  width: 30%;
+  float:left;
+}
+
 
 /*configuracion pie de pagina*/
   footer{
