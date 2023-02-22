@@ -5,14 +5,14 @@
 * {
     box-sizing: border-box;
   }
-
+/* Imagen de fondo */
 body {
   background-image: url('Background1.jpg');
   background-repeat: no-repeat;
   background: cover;
   }
   
-
+/*Estandar: Estilo letra y borde titulos/comienzos de sección */
 .Encabezado, .Texto{
   border: solid #2d3142;
   font-family: 'Marvel', sans-serif;
@@ -30,8 +30,6 @@ body {
   font-size: 17px;
 }
 
-
-
 /* Clear floats despues de las columnas para eliminar la superposición */
 .filla:after {
 content: "";
@@ -39,6 +37,7 @@ display: table;
 clear: both;
 }
 
+/*Tamaño y configuracion columna izquierda*/
 #c1 {
   width: 20%;
   float:left;
@@ -47,13 +46,14 @@ clear: both;
   margin-right:0px;
   margin-left: 5px;
   padding: 10px;
-  border: 5px solid #2d3142;
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius:15px;
+  border: 5px solid #2d3142;
   background-color: rgba(255, 0, 0, 0.096);
 }
 
+/*Tamaño y configuracion columna derecha*/
 #c2 {
   width: 59.5%;
   float: left;
@@ -62,22 +62,24 @@ clear: both;
   margin-right: 5px;
   margin-left: 5px;
   padding: 10px;
-  border: 5px solid #2d3142;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius:15px;
+  border: 5px solid #2d3142;
   background-color: rgba(255, 0, 0, 0.096);
   
 }
 
+/*configuracion parrafos y listas*/
 p, li {
-  margin: 15px;
   font-size: 20px;
+  font-family: 'Marvel', sans-serif;
+  margin: 15px;
   padding: 3px;
 }
 
 
-
+/*configuracion pie de pagina*/
   footer{
     clear: both;
     position: relative;
@@ -87,8 +89,8 @@ p, li {
    }
   
 
-/* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
-/* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
+/* estilos para imágenes*/
+/* posicionamiento de imágenes*/
 
 img {
     width: 100%;
@@ -115,19 +117,20 @@ IMG.displayed {
   box-shadow: 0 0 20px #000;
   }
 
- /*Tabla*/
-
-/* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
+/* Responsive layout - cuando el ancho de pantalla es menor a 1020px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
 @media screen and (max-width: 1020px) {
+    /*Imagen de perfil*/
     .iresponsive {
         width: 100%;
     }
+    /*Titulo centro*/
     .Encabezado {
       font-size: 20px;
       width: 100%;
     }
+    /*Columnas izquierda y derecha*/
     #c2, #c1{
       width: 100%;
       height: 100%;
@@ -136,6 +139,7 @@ IMG.displayed {
       margin-bottom: 5px;
       background-color: white;
     }
+    /*Cuerpo con nuevo fondo*/
     body {
       background:#bfc0c0;
       }
