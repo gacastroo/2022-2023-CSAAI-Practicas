@@ -6,8 +6,7 @@
     body {
 
      /* Ubicación de la imagen */
-    background-image: url('Background21.jpg');
-    width:100%;
+    background-image: url("/P1/CV/Imagenes/JPG/background2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -24,9 +23,9 @@
     de fondo o si hay problemas para cargarla */
     background-color: #999;
     }
-  @media screen and (max-width: 620px) 
+  @media screen and (max-width: 600px) 
   {
   body{
-  background-image: url('Background22.jpg')
+  background-image: url("/P1/CV/Imagenes/JPG/background2-1.jpg");
   }
   }
