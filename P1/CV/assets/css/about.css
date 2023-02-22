@@ -1,15 +1,16 @@
 .imageh {
-  background-image: url("../../Imagenes/JPG/Background2.jpg");
+  background-image: url("../../Imagenes/JPG/background2-1.jpg");
   background-size: cover;
   background-position: center;
+  height: 60%;
   padding: 20px;
 }
 .text {
-  padding: 20% 0;
+  padding: 5% 0;
   color: rgb(255, 255, 255);
   text-shadow: 4px 4px 16px rgba(253, 255, 115, 0.795);
   font-size: 25px; 
-  text-align: center;
+  text-align: top center;
 }
 
 @media(min-width:700px)
@@ -17,6 +18,7 @@
 .text
 {
 font-size: 50px;
+text-align: center;
 }
 }
 
