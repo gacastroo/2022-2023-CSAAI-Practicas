@@ -7,7 +7,7 @@
   }
 /* Imagen de fondo */
 body {
-  background-image: url("P1/CV/Imagenes/JPG/Background1.jpg");
+  background-image: url("/P1/CV/imagenes/jpg/background1.jpg");
   background-repeat: no-repeat;
   background: cover;
   }
