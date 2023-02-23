@@ -46,7 +46,7 @@
 
 .cell:nth-child(3) img {
   max-width: 100%;
-  height: 250px;
+  height: 200px;
   display: block;
   margin: auto;
 }
@@ -89,6 +89,13 @@
     margin-right: 10px;
     margin-bottom: -13px;
     margin-left: 0px;
+  }
+
+  .cell:nth-child(3) img {
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin: auto;
   }
 
   .cell:nth-child(3) {
