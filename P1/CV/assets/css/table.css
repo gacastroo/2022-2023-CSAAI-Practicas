@@ -68,7 +68,7 @@
     display: block;
     width: 100%;
     border: none;
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: center;
   }
 
@@ -76,12 +76,19 @@
     width: 100%;
     font-size: 20px;
     border-bottom: 1px solid black;
-    margin-top: 10px;
+    margin-top: -11px;
+    margin-right: 10px;
+    margin-bottom: -13px;
+    margin-left: 0px;
   }
   .cell:nth-child(2) {
     width: 100%;
     font-size: 20px;
     border-bottom: 1px solid black;
+    margin-top: -11px;
+    margin-right: 10px;
+    margin-bottom: -13px;
+    margin-left: 0px;
   }
 
   .cell:nth-child(3) {
