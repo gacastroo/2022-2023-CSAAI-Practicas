@@ -9,7 +9,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 140vh; /* cambiamos la altura a viewport height */
+  height: auto; /* cambiamos la altura a viewport height */
 }
 
 .text {
