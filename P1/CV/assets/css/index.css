@@ -116,11 +116,26 @@ IMG.displayed {
 
 .profile {
   border-radius: 50%;
-  border: solid #2d3142 5px;
+  border: solid #000000 5px;
   margin-bottom: 5px;
   margin-top: 15px;
   box-shadow: 0 0 20px #000;
   }
+
+  a
+{
+margin-left: 2%;
+color: black;
+}
+a, a:visited {
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #ef8354;
+}
 
 /* Responsive layout - cuando el ancho de pantalla es menor a 1020px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
