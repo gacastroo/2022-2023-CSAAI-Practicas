@@ -68,15 +68,6 @@ img
     padding: 20px;
   }
 
-  .imageh {
-    background-image: url("../../Imagenes/JPG/background2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: auto; /* cambiamos la altura a viewport height */
-    padding: 20px;
-    }
-
   a
     {
     margin-left: 0px;
