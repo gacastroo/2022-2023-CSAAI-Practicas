@@ -114,6 +114,11 @@ div.contenadorimg
     margin-left: 50px;margin-right: 50px;border-left-width: 0px;
   }
 
+  iframe
+  {
+  margin-left: 15%;
+  }
+  
   a
     {
     margin-left: 0px;
