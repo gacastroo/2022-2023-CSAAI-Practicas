@@ -142,7 +142,7 @@ IMG.displayed {
       border-radius: 12px;
       margin-top: 5px;
       margin-bottom: 5px;
-      background-color: white;
+      background-color:  rgba(255, 0, 0, 0.096);
     }
     /*Cuerpo con nuevo fondo*/
     body {
