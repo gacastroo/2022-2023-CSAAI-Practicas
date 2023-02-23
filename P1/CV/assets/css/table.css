@@ -87,7 +87,6 @@
   .cell:nth-child(3) {
     display: block;
     width:100% ;
-    border-bottom: 1px solid black;
   }
 
   .cell:before {
