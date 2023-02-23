@@ -57,6 +57,16 @@ img
   border-radius: 5%;
 }
 
+div.return
+{
+  margin:70px;
+}
+
+div.contenadorimg
+{
+  padding: 20px;
+}
+
 @media (max-width: 768px) { /* estilos para pantallas pequeñas */
   .text {
     font-size: 8vw;
@@ -80,5 +90,31 @@ img
     width: 100%;
     max-width: 600px;
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 1580px) {
+  .text {
+    font-size: 8vw;
+  }
+  
+  .subtitulo {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  a
+    {
+    margin-left: 15px;
+    }
+  .image-container {
+      max-width: 100%;
+    }
+  img
+  {
+    width: 100%;
+    max-width: 800px;
+    margin-left: 10%;
   }
 }
