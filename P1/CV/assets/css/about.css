@@ -61,10 +61,10 @@ a:hover, a:active {
     background-position: center;
     height: auto; /* cambiamos la altura a viewport height */
     padding: 20px;
-  }
+    }
 
   a
-{
-margin-left: 0%;
-}
+    {
+    margin-left: 0;
+    }
 }
