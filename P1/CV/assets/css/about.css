@@ -5,8 +5,7 @@ html, body {
 }
 
 .imageh {
-  background-image: url("../../Imagenes/JPG/background2-1.jpg");
-  background-size: cover;
+  background-image: url("../../Imagenes/JPG/background2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
@@ -56,7 +55,7 @@ a:hover, a:active {
   }
 
   .imageh {
-    background-image: url("../../Imagenes/JPG/background2-1.jpg");
+    background-image: url("../../Imagenes/JPG/background2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,6 +65,6 @@ a:hover, a:active {
 
   a
     {
-    margin-left: 0;
+    margin-left: 0px;
     }
 }
