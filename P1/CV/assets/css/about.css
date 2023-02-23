@@ -20,7 +20,7 @@ html, body {
   text-align: center;
 }
 
-.subtitulo {
+.recuadro {
   background-color: rgba(0, 0, 0, 0.356);
   color: white;
   font-size: 20px;
@@ -37,6 +37,10 @@ h2 {
   font-size: 30px;
 }
 
+iframe
+{
+margin-left: 27%;
+}
 a
 {
 margin-left: 30%;
@@ -72,12 +76,17 @@ div.contenadorimg
     font-size: 8vw;
   }
   
-  .subtitulo {
+  .recuadro {
     max-width: 100%;
     height: auto;
     padding: 20px;
   }
 
+  
+  iframe
+  {
+  margin-left: 15%;
+  }
   a
     {
     margin-left: 0px;
@@ -89,7 +98,7 @@ div.contenadorimg
   {
     width: 100%;
     max-width: 600px;
-    margin-left: 0px;
+    margin-left: 40px;
   }
 }
 
@@ -98,7 +107,7 @@ div.contenadorimg
     font-size: 8vw;
   }
   
-  .subtitulo {
+  .recuadro {
     max-width: 100%;
     height: auto;
     padding: 20px;
