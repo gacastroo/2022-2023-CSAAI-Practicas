@@ -39,7 +39,7 @@ h2 {
 
 a
 {
-margin-left: 35%;
+margin-left: 30%;
 }
 a, a:visited {
   color: #ffffff5d;
@@ -63,14 +63,14 @@ img
   }
   
   .subtitulo {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     padding: 20px;
   }
 
   a
     {
-    margin-left: 0px;
+    margin-left: 15px;
     }
   .image-container {
       max-width: 100%;
@@ -79,6 +79,6 @@ img
   {
     width: 100%;
     max-width: 600px;
-    margin-left: 0%;
+    margin-left: 0px;
   }
 }
