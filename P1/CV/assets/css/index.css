@@ -6,10 +6,6 @@ body {
   background-image: url("../../Imagenes/JPG/Background1.jpg");
   background-repeat: no-repeat;
   }
-
-img {
-    background:transparent url(../../Imagenes/GIF/cargando.gif) center no-repeat;
-    }
   
 /*Estandar: Estilo letra y borde titulos/comienzos de sección */
 .Encabezado, .Texto{
