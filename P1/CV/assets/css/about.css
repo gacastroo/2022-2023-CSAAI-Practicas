@@ -1,10 +1,12 @@
-html, body {
+html, body 
+{
   height: 100%;
   margin: 0;
   padding: 0;
 }
 /*Imagen de fondo*/
-.imageh {
+.imageh 
+{
   background-image: url("../../Imagenes/JPG/Background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,14 +16,16 @@ html, body {
 }
 
 /*titulo*/
-.text {
+.text 
+{
   color: #ffcd00;
   text-shadow: 4px 4px 16px rgba(253, 255, 115, 0.411);
   font-size: 3vw; /* cambiamos el tamaño de fuente a viewport width */
   text-align: center;
 }
 /*Recuadro negro donde se encuentra el texto*/
-.recuadro {
+.recuadro 
+{
   background-color: rgba(0, 0, 0, 0.356);
   color: white;
   font-size: 20px;
@@ -32,7 +36,8 @@ html, body {
   border-radius: 1%;
 }
 /*Titulo Secciones*/
-h2 {
+h2 
+{
   border-bottom: 3px solid #0066FF;
   text-align: center;
   font-size: 30px;
@@ -73,9 +78,11 @@ div.contenadorimg
 {
   padding: 20px;
 }
-
-@media (max-width: 768px) { /* estilos para pantallas pequeñas */
-  .text {
+/* estilos para pantallas pequeñas */
+@media (max-width: 768px) 
+{ 
+  .text 
+  {
     font-size: 8vw;
   }
   
@@ -104,13 +111,16 @@ div.contenadorimg
     margin-left: 40px;
   }
 }
-
-@media (max-width: 1580px) { /*estilos para pantallas medianas*/
-  .text {
+/*estilos para pantallas medianas*/
+@media (max-width: 1580px) 
+{ 
+  .text 
+  {
     font-size: 8vw;
   }
   
-  .recuadro {
+  .recuadro 
+  {
     max-width: 100%;
     height: auto;
     padding: 20px;
@@ -119,14 +129,15 @@ div.contenadorimg
 
   iframe
   {
-  margin-left: 15%;
+    margin-left: 15%;
   }
   
   a
-    {
+  {
     margin-left: 0px;
-    }
-  .image-container {
+  }
+  .image-container 
+    {
       max-width: 100%;
     }
   img
