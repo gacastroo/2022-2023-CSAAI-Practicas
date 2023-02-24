@@ -87,14 +87,14 @@ p, li
 
 
 /*configuracion pie de pagina*/
-  footer
-  {
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;
-    text-align: center;
-   }
+footer
+{
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+  text-align: center;
+}
   
 
 /* estilos para imágenes*/
