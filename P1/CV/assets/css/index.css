@@ -2,13 +2,15 @@
     box-sizing: border-box;
   }
 /* Imagen de fondo */
-body {
+body 
+{
   background-image: url("../../Imagenes/JPG/Background1.jpg");
   background-repeat: no-repeat;
-  }
+}
   
 /*Estandar: Estilo letra y borde titulos/comienzos de sección */
-.Encabezado, .Texto{
+.Encabezado, .Texto
+{
   border: solid #2d3142;
   font-family: 'Marvel', sans-serif;
   font-size: 15px;
@@ -19,7 +21,8 @@ body {
 }
 
 /*Texto Columna centro, ancho de borde, tamaño de letra, alinear al centro*/
-.Encabezado {
+.Encabezado 
+{
   margin-top: 10px;
   width: 80%;
   font-size: 17px;
@@ -33,7 +36,8 @@ clear: both;
 }
 
 /*Tamaño y configuracion columna izquierda*/
-#c1 {
+#c1 
+{
   width: 20%;
   float:left;
   margin-top:5px;
@@ -49,7 +53,8 @@ clear: both;
 }
 
 /*Tamaño y configuracion columna derecha*/
-#c2 {
+#c2 
+{
   width: 59.5%;
   float: left;
   margin-top:5px;
@@ -66,7 +71,8 @@ clear: both;
 }
 
 /*configuracion parrafos y listas*/
-p, li {
+p, li 
+{
   font-size: 20px;
   font-family: 'Marvel', sans-serif;
   margin: 15px;
@@ -81,7 +87,8 @@ p, li {
 
 
 /*configuracion pie de pagina*/
-  footer{
+  footer
+  {
     clear: both;
     position: relative;
     height: 200px;
@@ -93,13 +100,15 @@ p, li {
 /* estilos para imágenes*/
 /* posicionamiento de imágenes*/
 
-img {
+img 
+{
     width: 100%;
     height: auto;
     
 }
 
-IMG.displayed {
+IMG.displayed 
+{
   width: 300px;
   height: 250px;
   border-radius: 50%;
@@ -107,47 +116,55 @@ IMG.displayed {
   background-color: #ef8354;
   box-shadow: 0 0 30px #000;
   transform: scale(0.6);
-  }
+}
 
 
-.profile {
+.profile 
+{
   border-radius: 50%;
   border: solid #000000 5px;
   margin-bottom: 5px;
   margin-top: 15px;
   box-shadow: 0 0 20px #000;
-  }
+}
 
+/*Configuración de el enlace*/
   a
 {
 margin-left: 2%;
 color: black;
 }
-a, a:visited {
+a, a:visited 
+{
   color: rgba(0, 0, 0, 0.658);
   font-size: 30px;
   text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active 
+{
   color: #ef8354;
 }
 
 /* Responsive layout - cuando el ancho de pantalla es menor a 1020px, muestra las columnas apiladas. */
 /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1020px) 
+{
     /*Imagen de perfil*/
-    .iresponsive {
+    .iresponsive 
+    {
         width: 100%;
     }
     /*Titulo centro*/
-    .Encabezado {
+    .Encabezado 
+    {
       font-size: 20px;
       width: 100%;
     }
     /*Columnas izquierda y derecha*/
-    #c2, #c1{
+    #c2, #c1
+    {
       width: 100%;
       height: 100%;
       border-radius: 12px;
@@ -156,9 +173,10 @@ a:hover, a:active {
       background-color: rgba(255, 0, 0, 0.096);
     }
     /*Cuerpo con nuevo fondo*/
-    body {
+    body 
+    {
       background:white;
-      }
+    }
 
  }
   
