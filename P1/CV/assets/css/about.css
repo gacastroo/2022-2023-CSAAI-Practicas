@@ -12,9 +12,7 @@ html, body {
   height: auto;
   float: left;
 }
-img, iframe {
-  background:transparent url(images/ajaxload.gif) center no-repeat;
-  }
+
 /*titulo*/
 .text {
   color: #ffcd00;
