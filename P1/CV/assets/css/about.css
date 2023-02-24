@@ -7,7 +7,7 @@ html, body
 /*Imagen de fondo*/
 .imageh 
 {
-  background-image: url("../../assets/imagenes/JPG/Background2.jpg");
+  background-image: url("../../assets/imagenes/JPG/background2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
