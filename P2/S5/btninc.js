@@ -14,8 +14,11 @@ boton.onclick = () => {
   console.log("Click!");
 
   //-- Incrementar contador
-  cont += 1;
+  cont += 2;
 
   //-- Actualizar el display
-  display.innerHTML = cont;
+//  display.innerHTML = cont;
+
+  //-- Actualizar el display
+  display.innerHTML += ' ' + cont;
 }
