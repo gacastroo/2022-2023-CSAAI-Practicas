@@ -1,0 +1,134 @@
+/* Fondo */
+body {
+    background-color: #575757;
+  }
+h1 {
+    color:rgb(248, 248, 248)
+}
+  .contenedor {
+    border-width: medium;
+    border: solid;
+    border-color: #001D3D;
+    width: 450px;
+    padding: 25px;
+    background-color: #003566;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 40px;
+}
+  
+  /* Botones de los números */
+  .digito {
+    background-color:  #F0E68C;
+    color: #333333;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .botonesc {
+    margin-top: 40px;
+
+  }
+
+
+  button:hover {
+    background-color: #03071E;
+    color:aliceblue;
+    cursor: pointer;
+  }
+
+  #reset:hover,#start:hover, #stop:hover {
+    background-color: #03071E;
+    color:aliceblue;
+    cursor: pointer;
+  }
+  
+  /* Botón de reiniciar */
+  #reset {
+    background-color: #90EE90;
+    color: #000000;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 15px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  /* Botón de detener el contador */
+  #stop {
+    background-color: #90EE90;
+    color: #000000;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  /* Botón de iniciar el contador */
+  #start {
+    background-color: #90EE90;
+    color: #000000;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  /* Asteriscos en la clave secreta */
+  .clave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    color: #e74c3c;
+    font-size: 40px;
+    }
+
+/* Contador */
+.contador {
+    background-color: #FFA07A ;
+    color: #000000;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    border-radius: 20px;
+  }
+
+  img.bomba{
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding-left: 35px;
+  }

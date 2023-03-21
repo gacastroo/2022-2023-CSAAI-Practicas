@@ -4,64 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gif.css">
     <script src = "crono.js"></script>
     <script src="index.js" defer></script>
+    <script src="gif.js" defer></script>
     <title>BOOM</title>
     </head>
     <body>
-    <div class = "contenedor">
+        <div class = "contenedor">
         <div>
             <h1>
                 BOOM
             </h1>
         </div>
+
+        <div>
+            <img class="bomba" src="bomba.png"/>
+        </div>
+        <div>
+        </div>
         <div class = "clave">
-        <p id = "asterisco1" class = "asterisco"></p>
-        <p id = "asterisco2" class = "asterisco"></p>
-        <p id = "asterisco3" class = "asterisco"></p>
-        <p id = "asterisco4" class = "asterisco"></p>
+            <p id = "asterisco1" class = "asterisco"></p>
+            <p id = "asterisco2" class = "asterisco"></p>
+            <p id = "asterisco3" class = "asterisco"></p>
+            <p id = "asterisco4" class = "asterisco"></p>
         </div>
 
         <div class = "contador">
         <p id="display">0:0:0</p>
         </div>
-
-        <div class="fila">
+        <div class = "botonesc">
+            <div class="fila">
         <button type = "button" id = "boton1" value = "1" class = "digito">1</button>
         <button type = "button" id = "boton2" value = "2" class = "digito">2</button>
         <button type = "button" id = "boton3" value = "3" class = "digito">3</button>
         <br> <br>
-        </div>
-
-        <div class="fila">
+            </div>
+            <div class="fila">
         <button type = "button" id = "boton4" value = "4" class = "digito">4</button>
         <button type = "button" id = "boton5" value = "5" class = "digito">5</button>
         <button type = "button" id = "boton6" value = "6" class = "digito">6</button>
         <br> <br>
-        </div>
-
-
-        <div class="fila">
+            </div>
+            <div class="fila">
         <button type = "button" id = "boton7" value = "7" class = "digito">7</button>
         <button type = "button" id = "boton8" value = "8" class = "digito">8</button>
         <button type = "button" id = "boton9" value = "9" class = "digito">9</button>
         <br><br>
-        </div>
-
-        <div class="fila">
+            </div>
+            <div class="fila">
         <button type = "button" id = "boton0" value = "0" class = "digito">0</button>
         <br><br>
+            </div>
+            <div class="fila">
+                <button type = "button" id = "start">Start</button>
+                <button type = "button" id = "stop">Stop</button>
+                <button type = "button" id = "reset">Reset</button>
+            </div>
         </div>
-
-        <div class="fila">
-        
-        <button type = "button" id = "start">Start</button>
-        <button type = "button" id = "stop">Stop</button>
-        <button type = "button" id = "clear">Reset</button>
-        
         </div>
-    </div>
     
        
     </body>

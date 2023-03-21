@@ -1,6 +1,6 @@
 //Variable array con la clave secreta
 var secretkey = [];
-
+var win = 0;
 //funcion para ramdomizar la clava secreta
 function getRandomInt(min, max) {
     randomkey1 = Math.floor(Math.random() * (max - min)) + min;
@@ -37,13 +37,11 @@ const gui = {
     asterisco4 : document.getElementById("asterisco4"),
 }
 
-
-
 //-- Estados de la calculadora
 const ESTADO = {
-    INIT: 0,
-    OP1: 1,
-    OP2: 2,
+    INIT: 0, //Estado inicial
+    OP1: 1, //Estado in game
+    OP2: 2, //Estado de parada
 }
 
  //-- Variable de estado de la calculadora
@@ -57,8 +55,6 @@ function digito(ev)
     //recibe un digito
     //Según en qué estado se encuentre la calculadora
     //hará una accion u otra
-
-    //El primer digito directamente al display
     if (estado == ESTADO.INIT) {
 
         //display2.innerHTML = ev.target.value;
@@ -111,6 +107,8 @@ function digito(ev)
        
         //--En cualquier otro estado lo añadimos
         //display2.innerHTML += ev.target.value;
+
+
         if (randomkey1 == ev.target.value) {
             gui.asterisco1.innerHTML = randomkey1
             asterisco1.style.color = "green";
@@ -132,6 +130,7 @@ function digito(ev)
         if (randomkey1 == 20  && randomkey2 == 20 && randomkey3 == 20 && randomkey4 == 20){
             console.log('WIN');
             crono.stop();
+            win=1;
         }
     }
 }
@@ -152,6 +151,11 @@ const crono = new Crono(gui.display);
 //Resto de funciones de retrollamada
 gui.start.onclick = () => {
     console.log("start");
+    if (estado == ESTADO.OP2 & win != 1)
+    {
+        crono.start();
+        console.log("Partida no ganada, inicio start")
+    }
     if (randomkey1 != 20  && randomkey2 != 20 && randomkey3 !=  20 && randomkey4 != 20)
         {
             crono.start();
@@ -166,7 +170,7 @@ gui.stop.onclick = () => {
 }
 
 //Estado inicial
-clear.onclick = () => {
+reset.onclick = () => {
     console.log('reset');
     estado = ESTADO.INIT;
     secretkey = [];
@@ -174,10 +178,9 @@ clear.onclick = () => {
     console.log(secretkey)
     crono.stop();
     crono.reset();
+    win = 0;
     asterisco1.style.color = "red";
     asterisco2.style.color = "red";
     asterisco3.style.color = "red";
     asterisco4.style.color = "red";
   }
-
-
