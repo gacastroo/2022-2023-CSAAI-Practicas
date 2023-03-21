@@ -51,56 +51,22 @@ h1 {
     cursor: pointer;
   }
   
-  /* Botón de reiniciar */
-  #reset {
-    background-color: #90EE90;
-    color: #000000;
-    border: none;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 5px;
-    padding-left: 15px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-  }
   
   /* Botón de detener el contador */
-  #stop {
+  #stop, #reset, #start {
     background-color: #90EE90;
     color: #000000;
-    border: none;
-    padding: 15px 25px;
-    text-align: center;
     font-size: 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 5px;
-    padding-left: 20px;
-    width: 90px;
-    height: 90px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+  }
+
+  button#reset,button#start, button#stop {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
-  /* Botón de iniciar el contador */
-  #start {
-    background-color: #90EE90;
-    color: #000000;
-    border: none;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 5px;
-    padding-left: 20px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-  }
   
   /* Asteriscos en la clave secreta */
   .clave {
