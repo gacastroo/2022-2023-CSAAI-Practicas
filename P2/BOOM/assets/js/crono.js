@@ -62,4 +62,12 @@ class Crono {
 
         this.display.innerHTML = "0:0:0";
     }
+
+    //-- Obtener el tiempo actual formateado como cadena
+    getCurrentTime() {
+            const centStr = String(this.cent).padStart(2, '0');
+            const segStr = String(this.seg).padStart(2, '0');
+            const minStr = String(this.min).padStart(2, '0');
+            return `${minStr}:${segStr}:${centStr}`;
+    }
 }

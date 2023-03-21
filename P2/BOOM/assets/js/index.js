@@ -50,7 +50,6 @@ const ESTADO = {
  //-- Al comenzar estamos en el estado inicial
  let estado = ESTADO.INIT;  
 
-
 //-- Función de retrollamada de los digitos
 function digito(ev)
 {
@@ -106,9 +105,6 @@ function digito(ev)
     } 
     
     else {
-       
-        //--En cualquier otro estado lo añadimos
-        //display2.innerHTML += ev.target.value;
 
 
         if (randomkey1 == ev.target.value) {
@@ -128,13 +124,16 @@ function digito(ev)
             asterisco4.style.color = "green";
             randomkey4 = 20;
         } 
-        if (randomkey1 == 20  && randomkey2 == 20 && randomkey3 == 20 && randomkey4 == 20){
+        if (randomkey1 == 20  && randomkey2 == 20 && randomkey3 == 20 && randomkey4 == 20 ){
             console.log('WIN');
-            if (win!=1) {
-            window.alert('HAS GANADO');
-            }
+            console.log(crono.getCurrentTime())
             crono.stop();
-            win=1;
+            tiempo = (crono.getCurrentTime());
+            if (win!=1) {
+                window.alert('HAS GANADO'+ "  EN: " + tiempo);
+                window.alert('DALE AL BOTON DE RESET SI QUIERES VOLVER A JUGAR Y SUPERAR TU MARCA');
+                }
+            win = 1;
         }
 
     }
@@ -188,6 +187,6 @@ reset.onclick = () => {
     asterisco2.style.color = "red";
     asterisco3.style.color = "red";
     asterisco4.style.color = "red";
-  } 
+  }
 
-
+  
