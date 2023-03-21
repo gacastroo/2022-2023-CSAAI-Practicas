@@ -30,6 +30,7 @@ class Crono {
         this.seg = 0;
         }
 
+
         //-- Mostrar el valor actual
         this.display.innerHTML = this.min + ":" + this.seg + ":" + this.cent
     }

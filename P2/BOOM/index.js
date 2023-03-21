@@ -21,6 +21,8 @@ function getRandomInt(min, max) {
     secretkey.push(randomkey4);
 }
 
+window.alert('TIENES QUE ADIVINAR EL CODIGO SECRETO LO ANTES POSIBLE, BUENA SUERTE')
+
 //inicio de la variable secreta y escribirla por consola
 randomkey = getRandomInt(0, 9);
 console.log(secretkey);
@@ -125,13 +127,16 @@ function digito(ev)
             gui.asterisco4.innerHTML = randomkey4
             asterisco4.style.color = "green";
             randomkey4 = 20;
-        }    
-
+        } 
         if (randomkey1 == 20  && randomkey2 == 20 && randomkey3 == 20 && randomkey4 == 20){
             console.log('WIN');
+            if (win!=1) {
+            window.alert('HAS GANADO');
+            }
             crono.stop();
             win=1;
         }
+
     }
 }
 
@@ -183,4 +188,6 @@ reset.onclick = () => {
     asterisco2.style.color = "red";
     asterisco3.style.color = "red";
     asterisco4.style.color = "red";
-  }
+  } 
+
+
