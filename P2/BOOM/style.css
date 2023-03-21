@@ -134,3 +134,99 @@ h1 {
     height: 200px;
     padding-left: 35px;
   }
+
+  /* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .contenedor {
+    width: 90%;
+  }
+  .digito {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 3px;
+  }
+  #reset, #start, #stop {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 3px;
+    width: 70px;
+    height: 70px;
+  }
+  .clave {
+    font-size: 30px;
+  }
+  .contador {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 3px;
+  }
+  img.bomba{
+    width: 150px;
+    height: 150px;
+    padding-left: 25px;
+  }
+}
+
+/* For screens between 600px and 900px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .contenedor {
+    width: 70%;
+  }
+  .digito {
+    font-size: 22px;
+    padding: 12px 22px;
+    margin: 4px;
+  }
+  #reset, #start, #stop {
+    font-size: 22px;
+    padding: 12px 22px;
+    margin: 4px;
+    width: 80px;
+    height: 80px;
+  }
+  .clave {
+    font-size: 35px;
+  }
+  .contador {
+    font-size: 22px;
+    padding: 12px 22px;
+    margin: 4px;
+  }
+  img.bomba{
+    width: 170px;
+    height: 170px;
+    padding-left: 30px;
+  }
+}
+
+/* For screens larger than 900px */
+@media screen and (min-width: 900px) {
+  .contenedor {
+    width: 450px;
+  }
+  .digito {
+    font-size: 24px;
+    padding: 15px 25px;
+    margin: 5px;
+  }
+  #reset, #start, #stop {
+    font-size: 24px;
+    padding: 15px 25px;
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+  }
+  .clave {
+    font-size: 40px;
+  }
+  .contador {
+    font-size: 24px;
+    padding: 15px 25px;
+    margin: 5px;
+  }
+  img.bomba{
+    width: 200px;
+    height: 200px;
+    padding-left: 35px;
+  }
+}
