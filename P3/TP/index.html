@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP</title>
+
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="/P3/TP/assets/css/style.css">
+    <!-- Código javascript -->
+    <script src="/P3/TP/assets/javascript/crono.js" defer></script>
+    <script src="/P3/TP/assets/javascript/game.js" defer></script>
+</head>
+<body>
+    <img src="/P3/TP/assets/imagenes/PNG/ashe2.png" alt="ashe" id="ashe">
+    <img src="/P3/TP/assets/imagenes/PNG/flecha.png" alt="flecha" id="arrow">
+    <img src="/P3/TP/assets/imagenes/PNG/globo.png"  alt="globo" id="globo">
+
+    <canvas id="canvas"></canvas>
+    <div class="data-container">
+        <div class="data">
+            <h2>Tiempo transcurrido:</h2>
+            <p id="display">0:0:0</p>
+            <p>Ángulo  <input type="range" id="angle"><span id="angle_display">0</span></p>
+            <p>Velocidad  <input type="range" id="speed"><span id="speed_display">0</span></p>
+            <button type="button" id="start">LANZAR</button>
+            <button type="button" id="reset">INICIAR</button>
+            <p></p>
+        </div>
+        <div class="tutoriaL">
+            <h2>TUTORIAL</h2>
+            <p>Dale al boton <b>iniciar</b> y ayuda a <b>Ashe</b> a derrotar a <b>su enemigo</b> lo antes posible.</P>
+            <P>Para ello puedes Asignar los valores de la <b>velocidad</b> y <b>ángulo</b> de su flecha</P>
+            <p>Presiona <b>LANZAR</b> para lanzar la flecha.</p>
+            <p>Presiona <b>INICIAR</b> para empezar de nuevo.</p>
+        </div>
+    </div>
+</body>
+</html>

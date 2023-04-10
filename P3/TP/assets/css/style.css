@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+canvas {
+    background-image: url(/P3/TP/assets/imagenes/JPG/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 800px;
+    height: 400px;
+}
+
+img {
+    display: none;
+}
+
+body {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: left;
+    color: #22371c;
+}
+
+#display {
+    background-color:  #ef8354;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 17rem;
+    color: #fff;
+    text-align: center;
+}
+
+.data-container {
+    background-color: rgba(255, 0, 0, 0.151);
+    border: none;
+    border-radius: 5px;
+    width: 800px;
+    padding: 10px 10px;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: solid #000000 2px;
+    border-radius: 50px;
+}
+
+.data {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.instructions {
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+button {
+    background-color:  #ef8354;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+button:active {
+    background-color: rgb(194, 103, 103);
+}
+
+button:hover {
+    background-color: rgb(196, 94, 111);
+}
+
+@media screen and (max-width: 800px) {
+    .data-container {
+        width: 95%;
+        grid-template-columns: 100%;
+        border:none;
+        border-radius: 0px;
+        margin: auto;
+    }
+    canvas {
+        width: 95%;
+        height: auto;
+    }
+}
