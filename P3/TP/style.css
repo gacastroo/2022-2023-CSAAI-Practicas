@@ -57,16 +57,9 @@ body {
 .data {
     border: none;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 0px 30px;
 }
 
-.instructions {
-
-    border: none;
-    border-radius: 5px;
-    padding: 10px 30px;
-    text-align: left;
-}
 
 button {
     background-color:  #ef8354;
