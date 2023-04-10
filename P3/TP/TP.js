@@ -12,8 +12,9 @@ const arrow = document.getElementById("arrow");
 const globo = document.getElementById("globo");
 
 //-----------------SONIDOS--------------------
-const audio = new Audio("lose.mp3");
-const audio2 = new Audio("win.mp3");
+const audiol = new Audio("derrota.mp3");
+const audiow = new Audio("victoria.mp3");
+const audiof = document.getElementById("fondo.mp3")
 
 //-- ELEMENTOS DE LA INTERFAZ --//
 // Definimos los posibles estados del juego //
@@ -99,6 +100,7 @@ angleValue.value = 0;
 var time = 0;
 // Estado en el que se encuentra el juego//
 var state = STATUS.INIT;
+outgame = false;
 
 // Función que se ejecuta el bucle,corresponde al juego //
 function game() {
@@ -108,14 +110,12 @@ function game() {
         state = STATUS.INIT;
         console.log("Victoria");
         alert("¡Has ganado!, Ashe ahora puede volver a la Liga de las leyendas");
-        alert.stop();
         audiow.play();
     // Condición de derrota//
     } else if (y <= 90) {
         crono.stop();
-        console.log("Derrota");
+        console.log("derrota");
         alert("¡Has perdido!, ¿Ahora que hará Ashe?");
-        alert.stop();
         audiol.play();
     } 
     //Disparo//
@@ -135,15 +135,13 @@ function game() {
         //-- Dibuja el Figura, Objetivo y proyectil//
         dibujar(ashe, 20, 165, 150);
         dibujar(globo, x0, y0, 70);
-        dibujar(arrow, x, y, 85);
+        dibujar(arrow, x, y, 90);
     
         requestAnimationFrame(game);
     }
 }
 
 // Funcion de los botones (funciones que detienen el cronómetro, restablecen las variables del juego y llaman a la función del juego para reiniciar el ciclo.) //
-const start = document.getElementById("lanzar");
-const reset = document.getElementById("iniciar");
 //Boton Start//
 gui.start.onclick = () => {
     //Condición para que el jugador no pueda volver a disparar una vez haya ganado o perdido//
@@ -153,12 +151,12 @@ gui.start.onclick = () => {
     outgame=true;
     state = STATUS.OP;
     }
-    console.log("lanzar");
+    console.log("reset");
 }
 //Boton Reset//
 gui.reset.onclick = () => {
         crono.reset();
-        console.log("iniciar");
+        console.log("inicio");
         speed = 0;
         time = 0;
         outgame=false;
@@ -169,6 +167,10 @@ gui.reset.onclick = () => {
         //Reiniciar animacion juego//
         requestAnimationFrame(game);
     }
+    //audiof.onclick=() => {
+        //click_sound.currentTime = 0;
+        //click_sound.play();
+    //}
 
 //Ejecución del juego
 game();

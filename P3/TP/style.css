@@ -3,7 +3,7 @@
 }
 
 canvas {
-    background-image: url(/P3/TP/assets/imagenes/JPG/fondo.jpg);
+    background-image: url(fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +47,7 @@ body {
     margin: 10px auto;
     font-size: 1.2rem;
     color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: 50% 50%;
     border: solid #000000 2px;
@@ -77,12 +78,14 @@ button {
     color: #fff;
 }
 
-button:active {
-    background-color: rgb(194, 103, 103);
-}
+/*button#fondo {
+    margin-left: 32px;
+    width: 100px;
+}*/
+
 
 button:hover {
-    background-color: rgb(196, 94, 111);
+    background-color: rgb(180, 53, 21);
 }
 
 @media screen and (max-width: 800px) {
