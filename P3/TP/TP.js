@@ -14,7 +14,7 @@ const globo = document.getElementById("globo");
 //-----------------SONIDOS--------------------
 const audiol = new Audio("derrota.mp3");
 const audiow = new Audio("victoria.mp3");
-const audiof = document.getElementById("fondo.mp3")
+//onst audiof = document.getElementById("fondo.mp3")
 
 //-- ELEMENTOS DE LA INTERFAZ --//
 // Definimos los posibles estados del juego //
@@ -164,7 +164,7 @@ gui.reset.onclick = () => {
         y = 142;
         x0 = getRandom(200, 700);
         state = STATUS.INIT;
-        //Reiniciar animacion juego//
+        //Reiniciar//
         requestAnimationFrame(game);
     }
     //audiof.onclick=() => {
