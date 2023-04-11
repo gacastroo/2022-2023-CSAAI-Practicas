@@ -25,6 +25,7 @@ font-family: Montserrat;
 button {
     cursor: pointer;
     margin: 15px;
+    margin-left: 0px;
     border-radius: 50px;
 }
 
@@ -40,8 +41,8 @@ button:hover {
 Vamos a darle dimensiones a la carta, y nos aseguramos de cambiar el puntero:*/
 .card {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    height: 200px;
     cursor: pointer;
 }
 /*Para el frente y el reverso de la carta vamos a necesitar las siguientes reglas:*/
