@@ -243,6 +243,7 @@ button {
 
     body {
       text-align: center;
+      align-items: center;
     }
 
     .win-text {
