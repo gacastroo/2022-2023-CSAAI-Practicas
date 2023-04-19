@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/P4/SC/assets/font/Montserrat-Regular.ttf);
+}
+
+/* Y así podremos hacer referencia al font-family Montserrat más adelante
+font-family: Montserrat;
+*/
+
+
+/* centrar el tablero*/
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*mostrar el puntero diferente cuando pasamos sobre el botón con el puntero.*/
+
+.tablero {
+    margin:25px
+}
+
+button {
+    cursor: pointer;
+    margin: 15px;
+    margin-left: 0px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: rgba(61, 113, 226, 0.568);
+}
+
+/*crear un estado desactivado, para poder desactivar el botón cuando comenzamos el juego.*/
+.disabled {
+    color: #757575;
+}
+/*Para crear el efecto de dar vuelta a la carta vamos a utilizar la propiedad "transform".
+Vamos a darle dimensiones a la carta, y nos aseguramos de cambiar el puntero:*/
+.card {
+    position: relative;
+    width: 170px;
+    height: 200px;
+    cursor: pointer;
+}
+/*Para el frente y el reverso de la carta vamos a necesitar las siguientes reglas:*/
+.card-front,
+.card-back {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: #282A3A;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+
+/*La otra propiedad es "backface-visibility", que se utiliza para esconder el reverso de la carta.
+
+Ahora tenemos que rotar las cartas en posición correcta, y para eso utilizamos el siguiente código: */
+/*Es importante poner "user-select" a "none" porque no queremos que el texto se pueda seleccionar.
+Con esto conseguiremos rotar la carta 180 grados y ocultarla de nuestra vista.
+Después utilizaremos la clase de apoyo ".flipped" para rotar la carta de 0 a 180 y al contrario.
+Y estas mismas reglas aplicarán a todas las cartas del tablero, así que al descubrir todas las parejas, veremos todo el tablero al descubierto.
+*/
+.card-back {
+    font-size: 28pt;
+    text-align: center;
+    line-height: 100px;
+    background: #FDF8E6;
+    transform: rotateY(180deg) rotateZ(50deg);
+    user-select: none;
+}
+
+.card.flipped .card-front {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(0) rotateZ(0);
+}
+
