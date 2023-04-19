@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> 🧠 Memory </title>
+
+        <!-- Hoja de estilo -->
+        <link rel="stylesheet" href="../P4/assets/css/memory.css">
+
+        <!-- Código JS -->
+        <script src="../P4/assets/js/memory.js" defer></script>
+    </head>
+    <body>
+        <h1>MEMORY GAME</h1>
+        <div class="game">
+            <div class="controles">
+                <select id="dimensiones" name="dimensiones">
+                    <option value="2">Fácil(2x2)</option>
+                    <option value="4">Medio(4x4)</option>
+                    <option value="6">Difícil(6x6)</option>
+                </select> 
+                <p> <p>
+                <button class="start">Empezar</button>
+                <button  class="reset">Reiniciar</button>
+                <div class="display">
+                    <div class="movimientos">Movimientos realizados: 0 movimientos</div>
+                    <div class="timer">tiempo transcurrido: 0 sec</div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="tablero" grid-dimension="4"></div>
+                <div class="win">¡Has Ganado!</div>
+            </div>
+        </div>
+    </body>
+</html>
