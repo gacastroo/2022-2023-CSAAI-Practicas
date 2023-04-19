@@ -22,6 +22,7 @@ h1 {
   text-align: center;
 }
 
+
 :root {
   --gray: #34495e;
   --darkgray: #2c3e50;
@@ -135,6 +136,11 @@ button {
 .display {
   color: #282A3A;
   font-size: 12pt;
+  margin: 15px;
+}
+
+.movimientos{
+  margin: 15px;
 }
 
 .grid-container {
@@ -152,10 +158,9 @@ button {
 }
 
 .tablero {
-  padding: 20px;
+  padding: 62px;
   display: grid;
   grid-gap: 20px;
-  margin-top: 15px;
 }
 
 .grid-container.flipped .tablero {
