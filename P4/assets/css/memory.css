@@ -237,55 +237,64 @@ button {
 /* Estilos para pantallas más pequeñas */
 @media only screen and (max-width: 760px) {
 
-  html, body {
-      max-width: 100%;
-  }
-  body {
-    text-align: center;
-  }
-  .win-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
-    color: #000000;
-}
-  .game {
-    font-size: 0.8rem;
-  }
-  .btn {
-    font-size: 0.8rem;
-  }
-  .controles {
-    margin-top: 5px;
-  }
-  .grid-container {
-    margin-top: 10px;
-  }
-  .card-front, .card-back {
-    text-align: center;
-    border-radius: 5px;
-    width: 4em;
-    height: 4em;
-    font-size: 1rem;
-    vertical-align: top;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .card {
-    width: 4em;
-    height: 4em;
-  }
-  h1{
-    font-size: 35px;
-  }
-}
+    html, body {
+        max-width: 100%;
+    }
 
-img {
-  width:80%;
-  padding: 4px;
-}
+    body {
+      text-align: center;
+    }
+
+    .win-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 0.65rem;
+      color: #ffffff;
+  }
+
+    .game {
+      font-size: 0.8rem;
+    }
+
+    .btn {
+      font-size: 0.8rem;
+    }
+    
+    .controles {
+      margin-top: 5px;
+    }
+    
+    .grid-container {
+      margin-top: 10px;
+    }
+    
+    .card-front, .card-back {
+      text-align: center;
+      border-radius: 5px;
+      width: 2em;
+      height: 2em;
+      font-size: 1rem;
+      vertical-align: top;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: 2em;
+      height: 2em;
+    }
+    
+    .win {
+      font-size: 1.2rem;
+    }
+  }
+
+  img {
+    width:70%;
+    padding: 12px;
+  }
 
