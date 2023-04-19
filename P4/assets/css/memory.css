@@ -125,6 +125,7 @@ button {
   color: #FFF;
   border-radius: 5px;
   padding: 6px 12px;
+  margin: 5px;
   border: 0;
   cursor: pointer;
   font-family: Fredoka;
@@ -257,11 +258,6 @@ button {
 
     .game {
       font-size: 0.8rem;
-    }
-
-    .btn {
-      font-size: 0.8rem;
-      padding: 5%;
     }
     
     .controles {
