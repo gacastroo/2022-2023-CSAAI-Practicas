@@ -10,7 +10,6 @@
         reset: document.querySelector('.reset'),
         dimensiones: document.querySelector('#dimensiones'),
         win: document.querySelector('.win'),
-        
     
     }
     //variable de estado
@@ -22,6 +21,8 @@
         loop: null  //va a ir actualizando el display
     }
     
+    const audiol = new Audio("../P4/assets/mp3/carta.mp3");
+    const audio2 = new Audio("../P4/assets/mp3/victoria.mp3");
     
     //dimensiones tablero:
     const generateGame = () => {
@@ -124,7 +125,7 @@
     
         return randomPicks
     }
-    
+
     
     const shuffle = array => {
         const clonedArray = [...array]
@@ -156,6 +157,7 @@
             // Cuando se trata de una carta que no está girada, le damos la vuelta para mostrarla
             if (eventTarget.className.includes('card') && !eventParent.className.includes('flipped')) {
                 flipCard(eventParent);
+                audiol.play();
             // Pero si lo que ha pasado es un clic en el botón de comenzar lo que hacemos es
             // empezar el juego
             } else if (eventTarget.className == 'start' && !eventTarget.className.includes('disabled')) {
@@ -187,7 +189,7 @@
             state.totalTime++
     
             selectors.movimientos.innerText = `Movimientos realizados: ${state.totalFlips} movimientos`
-            selectors.timer.innerText = `Tiempo transcurrido: ${state.totalTime} sec`
+            selectors.timer.innerText = `Tiempo transcurrido: ${state.totalTime} s`
         }, 1000)
     }
     const resetGame = () => {
@@ -196,7 +198,7 @@
         state.totalFlips = 0;
         state.totalTime = 0;
         clearInterval(state.loop);
-        selectors.timer.textContent = "Tiempo transcurrido: 0 sec";
+        selectors.timer.textContent = "Tiempo transcurrido: 0 s";
         selectors.movimientos.textContent = "Movimientos realizados: 0 movimientos";
         selectors.gridContainer.classList.remove('flipped')
         selectors.start.classList.remove('disabled')
@@ -274,9 +276,11 @@
                         con <span class="highlight">${state.totalFlips}</span> movimientos<br />
                         en un tiempo de <span class="highlight">${state.totalTime}</span> segundos
                     </span>
+                    
                 `
                 // Paramos el loop porque el juego ha terminado
                 clearInterval(state.loop)
+                audio2.play();
             }, 1000)
         }
     }
