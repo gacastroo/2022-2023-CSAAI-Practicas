@@ -21,8 +21,8 @@
         loop: null  //va a ir actualizando el display
     }
     
-    const audiol = new Audio("../P4/assets/mp3/carta.mp3");
-    const audio2 = new Audio("../P4/assets/mp3/victoria.mp3");
+    const audiol = new Audio("../Memory/assets/mp3/carta.mp3");
+    const audio2 = new Audio("../Memory/assets/mp3/victoria.mp3");
     
     //dimensiones tablero:
     const generateGame = () => {
@@ -90,7 +90,7 @@
             ${items.map(item => `
                 <div class="card">
                     <div class="card-front"></div>
-                    <div class="card-back"><img src= "../P4/assets/imagenes/PNG/${item}" id="imagenes"></div>
+                    <div class="card-back"><img src= "../Memory/assets/imagenes/PNG/${item}" id="imagenes"></div>
                 </div>
             `).join('')}
        </
