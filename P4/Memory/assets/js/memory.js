@@ -12,6 +12,7 @@
         win: document.querySelector('.win'),
     
     }
+
     //variable de estado
     const state = {
         gameStarted: false,
@@ -23,6 +24,7 @@
     
     const audiol = new Audio("../Memory/assets/mp3/carta.mp3");
     const audio2 = new Audio("../Memory/assets/mp3/victoria.mp3");
+    const audio3 = new Audio("../Memory/assets/mp3/musica.mp3");
     
     //dimensiones tablero:
     const generateGame = () => {
@@ -161,6 +163,7 @@
             // Pero si lo que ha pasado es un clic en el botón de comenzar lo que hacemos es
             // empezar el juego
             } else if (eventTarget.className == 'start' && !eventTarget.className.includes('disabled')) {
+                audio3.play();
                 startGame();
             }else if (selectedDimensions != selectors.dimensiones.value && state.gameStarted == false){
                 selectedDimensions = selectors.dimensiones.value;
@@ -171,7 +174,6 @@
     
     // Generamos el juego
     generateGame()
-    
     // Asignamos las funciones de callback para determinados eventos
     attachEventListeners()
     
@@ -181,6 +183,7 @@
         state.gameStarted = true
         // Desactivamos el botón de comenzar
         selectors.start.classList.add('disabled')
+        audio3.play();
     
         // Comenzamos el bucle de juego
         // Cada segundo vamos actualizando el display de tiempo transcurrido
