@@ -1,14 +1,10 @@
 @font-face {
   font-family: 'Marvel';
   src: url(../fonts/MarvelRegular-Dj83.ttf) format('truetype');
-  font-size: normal;
-  font-weight: normal;
 }
 @font-face {
   font-family: 'Alegrya';
   src: url(../fonts/Alegreya-Regular.ttf) format('truetype');
-  font-size: normal;
-  font-weight: normal;
 }
 
 /* Y así podremos hacer referencia al font-family Montserrat más adelante
