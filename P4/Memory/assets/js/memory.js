@@ -103,7 +103,7 @@
         //-- Por último, vamos a inyectar el código html que hemos generado dentro de el contenedor
         // para el tablero de juego.
     
-        selectors.tablero.innerHTML = cards;.
+        selectors.tablero.innerHTML = cards;
     }
     
     const pickRandom = (array, items) => {
