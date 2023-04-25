@@ -1,14 +1,35 @@
 @font-face {
     font-family: Montserrat;
-    src: url(/P4/SC/assets/font/Montserrat-Regular.ttf);
+    src: url(./Montserrat-Regular.ttf);
 }
 
-/* Y así podremos hacer referencia al font-family Montserrat más adelante
-font-family: Montserrat;
-*/
+html {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%); */
+    font-family: Montserrat;
+}
 
+h1.titulo {
+    text-align:center;
+    margin: 2rem 0;
+    display: block;
+    color: #fff;
+}
+h1 {
+    font-size: 2.5rem;
+}
 
-/* centrar el tablero*/
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 .game {
     position: absolute;
     top: 50%;
@@ -16,61 +37,87 @@ font-family: Montserrat;
     transform: translate(-50%, -50%);
 }
 
-/*mostrar el puntero diferente cuando pasamos sobre el botón con el puntero.*/
-
-.tablero {
-    margin:25px
+.controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 button {
+    background: #282A3A;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
     cursor: pointer;
-    margin: 15px;
-    margin-left: 0px;
-    border-radius: 50px;
+    font-family: Fredoka;
+    font-size: 18pt;
 }
 
-button:hover {
-    background-color: rgba(61, 113, 226, 0.568);
-}
-
-/*crear un estado desactivado, para poder desactivar el botón cuando comenzamos el juego.*/
 .disabled {
     color: #757575;
 }
-/*Para crear el efecto de dar vuelta a la carta vamos a utilizar la propiedad "transform".
-Vamos a darle dimensiones a la carta, y nos aseguramos de cambiar el puntero:*/
+
+.display {
+    color: #282A3A;
+    font-size: 14pt;
+}
+
+.grid-container {
+    position: relative;
+}
+
+.tablero,
+.win {
+    border-radius: 5px;
+    box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
+    /* background: linear-gradient(135deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%); */
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.tablero {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
+.grid-container.flipped .tablero {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.grid-container.flipped .win {
+    transform: rotateY(0) rotateZ(0);
+}
+
 .card {
     position: relative;
-    width: 170px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 }
-/*Para el frente y el reverso de la carta vamos a necesitar las siguientes reglas:*/
+
 .card-front,
 .card-back {
     position: absolute;
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    background: #282A3A;
+    background-image: url(/P4/SC/assets/img/png/carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
 
-
-/*La otra propiedad es "backface-visibility", que se utiliza para esconder el reverso de la carta.
-
-Ahora tenemos que rotar las cartas en posición correcta, y para eso utilizamos el siguiente código: */
-/*Es importante poner "user-select" a "none" porque no queremos que el texto se pueda seleccionar.
-Con esto conseguiremos rotar la carta 180 grados y ocultarla de nuestra vista.
-Después utilizaremos la clase de apoyo ".flipped" para rotar la carta de 0 a 180 y al contrario.
-Y estas mismas reglas aplicarán a todas las cartas del tablero, así que al descubrir todas las parejas, veremos todo el tablero al descubierto.
-*/
 .card-back {
     font-size: 28pt;
     text-align: center;
     line-height: 100px;
-    background: #FDF8E6;
+    width: 70px;
+    background: #fde9e6;
     transform: rotateY(180deg) rotateZ(50deg);
     user-select: none;
 }
@@ -83,3 +130,26 @@ Y estas mismas reglas aplicarán a todas las cartas del tablero, así que al des
     transform: rotateY(0) rotateZ(0);
 }
 
+.win {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #FDF8E6;
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.win-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 21pt;
+    color: #282A3A;
+}
+
+.highlight {
+    color: #6f00fc;
+}

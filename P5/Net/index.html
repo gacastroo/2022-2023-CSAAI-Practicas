@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Net/assets/css/net.css">
+    <script src="../Net/assets/javascript/net.js" defer></script>
+    <title>Simulando la Red</title>
+</head>
+<body>
+    <p>Imagen en Origen</p>
+    <img src="../Net/assets/image/PNG/logoURJC.png" id="imagesrc">
+    <img src="../Net/assets/image/PNG/logoURJC.png" id="imagesrchide">    
+    <img src="../Net/assets/image/jpg/FPGA.jpg" id="cloud">
+    <button id="bsend">Enviar imagen</button>    
+    <p>Imagen en Destino</p>
+    <canvas id="canvas"></canvas>
+    <input type="range" id="netdelay" min="1" max="5" value="1"/>
+    <input type="range" id="nodos" min="3" max="8" value="2"/>
+    <p id="netdelay_value">0</p>
+    <p id="nodos_value">0</p>       
+    <p>La red</p>  
+</body>
+</html>
