@@ -15,7 +15,7 @@ const imgBack = document.getElementById('imagesrchide');
 const imgCloud = document.getElementById('cloud');
 const imgFront = document.getElementById('imagesrc');
 const ctx = canvas.getContext('2d');
-
+const audiol = new Audio("../Net/assets/music/mp3/envio.mp3");
 //-- Gestionar el estado el envío
 const state = {
   sendingImage: false,
@@ -50,7 +50,9 @@ imgCloud.onload = function () {
 
 //-- función de callback para el envío de la imagen
 gui.bsend.onclick = () => {
+  audiol.play();
   sendImage()
+  
 }
 
 //-- función de callback para actualizar los valores del 
