@@ -1,4 +1,4 @@
-console.log("Montando la red...")
+console.log("Montando la red...Miau")
 
 const gui = {
   bsend : document.getElementById("bsend"),
@@ -73,7 +73,7 @@ gui.nodos.oninput = () => {
 //-- https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData
 const sendImage = () => {
 
-  console.log("Comienzo a enviar...");
+  console.log("Comienzo a enviar...Miau");
 
   //-- Se establece como tamaño del canvas el mismo
   //-- que el de la imagen original
@@ -142,13 +142,13 @@ const sendImage = () => {
     // Paramos el loop si hemos terminado de enviar
     if (state.sendingPackage == state.totalPackages) {
       ctx.drawImage(imgBack, 0, 0); 
-      console.log("Envio terminado...");
+      console.log("Envio terminado... Miau");
       state.sendingImage = false;             
       clearInterval(state.loop);
     }
 
-    console.log("Enviando...");
+    console.log("Enviando... Miau Miau");
   }, (state.netDelay/1000)* state.nodos)
 }
 
-console.log("Red preparada...");
+console.log("Red preparada... Miau Miau Miau");

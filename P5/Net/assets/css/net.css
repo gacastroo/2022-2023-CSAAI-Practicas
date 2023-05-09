@@ -16,17 +16,18 @@ display: none;
 html{
   background-color: #ffffff;
   background-image: url('../image/jpg/fondo.jpg');
-
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background: linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%); */
 }
+
 html, body {
   height: 115%;
   margin: 0;
   padding: 0;
   font-family:'cat';
 }
+
+
 p {background: #bdf0fa; color: #0c92ac; font-weight: bold; padding: 15px; border: 2px solid #abecf9; border-radius: 6px;}
 
 body {
@@ -51,6 +52,7 @@ body {
   border: none;
   background: #bdf0fa;
   box-shadow: 0 5px #abecf9;
+  margin: 10px;
 }
 #bsend:hover {
   box-shadow: 0 3px #abecf9;
@@ -73,4 +75,13 @@ body {
   #bsend {
     font-size: 1em;
   }
+
+  h1,h2 {
+    font-size: 1em;
+  }
+
+  p{
+    font-size: 1em;
+  }
+  
 }
