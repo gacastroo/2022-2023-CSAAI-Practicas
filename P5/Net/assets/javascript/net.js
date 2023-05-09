@@ -150,7 +150,7 @@ const sendImage = () => {
     }
 
     console.log("Enviando... Miau Miau");
-  }, (state.netDelay/1000)* state.nodos)
+  }, (state.netDelay)* state.nodos)
 }
 
 console.log("Red preparada... Miau Miau Miau");
