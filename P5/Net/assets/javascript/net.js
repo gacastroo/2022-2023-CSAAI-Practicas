@@ -112,11 +112,6 @@ const sendImage = () => {
 
     //-- Obtener el array con todos los píxeles
     data = imgData.data
-
-    //-- cambiamos el canal a rojo del rectángulo que hemos seleccionado
-    for (let i = 0; i < data.length; i+=4) {
-      data[i] = 0; //-- Canal rojo a 0
-    }
     
     //-- dimensiones del rectángulo 2
     sx2 = sx1;
@@ -124,24 +119,22 @@ const sendImage = () => {
     sw2 = sw1;
     sh2 = state.totalPackages - sh1;
 
-    // if (sh2 > 0) {
-    //   //-- seleccionamos el rectángulo 2
-    //   imgData = ctx.getImageData(sx2, sy2, sw2, sh2);
-
-    //   //-- Obtener el array con todos los píxeles
-    //   data = imgData.data
-  
-    //   for (let i = 0; i < data.length; i+=4) {
-    //     // brillo = (3 * r + 4 * g + b)/8
-    //     //let brillo = (3 * data[i] + 4 * data[i+1] + data[i+2])/8
-    //     //data[i] = brillo;
-    //     //data[i+1] = brillo;
-    //     //data[i+2] = brillo; 
-    //     //data[i] = 0;
-    //     //data[i+1] = 0;
-    //     data[i+2] = 0;         
-    //   }  
-    // }
+    if (sh2 > 0) {
+      //-- seleccionamos el rectángulo 2
+      imgData = ctx.getImageData(sx2, sh2, sw2, sw2)
+      //-- Obtener el array con todos los píxeles
+      data = imgData.data
+       r= 219;
+       g= 250;
+       b= 250;
+      for (let i = 0; i <data.length; i+=6) {
+        //let brillo = (1 * data[i] + 2 * data[i+1] + data[i+2])/3
+       //brillo = (3 * r + 4 * g + b)/2
+        data[i] = g;
+        data[i+1] = r;
+        data[i+2] = b;         
+      }  
+    }
 
     //-- Poner la imagen modificada en el canvas
     ctx.putImageData(imgData, 0, 0);
