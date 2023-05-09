@@ -9,16 +9,23 @@
     <title>Simulando la Red</title>
 </head>
 <body>
-    <p>Imagen en Origen</p>
-    <img src="../Net/assets/image/jpg/michiinfo3.jpg" id="imagesrc">
-    <img src="../Net/assets/image/jpg/michiinfo3.jpg" id="imagesrchide">    
-    <img src="../Net/assets/image/jpg/michiinfo2.jpg" id="cloud">
+    <h2>Imagen en Origen</h2>
+    <img src="../Net/assets/image/jpg/michiinfo2.jpg" id="imagesrc">
+    <img src="../Net/assets/image/jpg/michiinfo2.jpg" id="imagesrchide">    
+    <img src="../Net/assets/image/jpg/michiinfo3.jpg" id="cloud">
     <button id="bsend">Enviar imagen</button>    
-    <p>Imagen en Destino</p>
+    <h2>Imagen en Destino</h2>
     <canvas id="canvas"></canvas>
-    <input type="range" id="netdelay" min="1" max="5" value="1"/>
-    <input type="range" id="nodos" min="3" max="8" value="2"/>
-    <p id="netdelay_value">0</p>
-    <p id="nodos_value">0</p>
+    <div id:="rangos">
+        <p>Delay: </p>
+        <p id="netdelay_value">0</p>
+        <hr />
+        <input type="range" id="netdelay" min="1" max="5" value="1"/>
+        <p>Número de nodos: </p>
+        <p id="nodos_value">0</p>
+        <hr />
+        <input type="range" id="nodos" min="3" max="8" value="3"/>
+    </div>
+   
 </body>
 </html>

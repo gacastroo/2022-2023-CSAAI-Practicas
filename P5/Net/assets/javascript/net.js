@@ -24,8 +24,8 @@ const state = {
   sendingPackage:0,
   netDelay: 1,
   netDelayDefault: 1,
-  nodos: 2,
-  nodosDefault: 2,
+  nodos: 3,
+  nodosDefault: 3,
   loop: null
 }
 
@@ -155,7 +155,7 @@ const sendImage = () => {
     }
 
     console.log("Enviando...");
-  }, state.netDelay)
+  }, (state.netDelay/1000)* state.nodos)
 }
 
 console.log("Red preparada...");

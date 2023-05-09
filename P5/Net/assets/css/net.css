@@ -1,4 +1,6 @@
-body {
+@font-face {
+  font-family: 'cat';
+  src: url(../fonts/Catamaran-Regular.ttf) format('truetype');
 }
 
 #cloud {
@@ -9,4 +11,66 @@ height: 179px;
 
 #imagesrchide {
 display: none;
+}
+
+html{
+  background-color: #ffffff;
+  background-image: url('../image/jpg/fondo.jpg');
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background: linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%); */
+}
+html, body {
+  height: 115%;
+  margin: 0;
+  padding: 0;
+  font-family:'cat';
+}
+p {background: #bdf0fa; color: #0c92ac; font-weight: bold; padding: 15px; border: 2px solid #abecf9; border-radius: 6px;}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bsend {
+  min-width: 130px;
+  height: 40px;
+  color: #0c92ac;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #bdf0fa;
+  box-shadow: 0 5px #abecf9;
+}
+#bsend:hover {
+  box-shadow: 0 3px #abecf9;
+  top: 1px;
+}
+#bsend:active {
+  box-shadow: 0 0 #abecf9;
+  top: 5px;
+}
+
+#rangos p { display:inline;  font-family:'cat'; }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  canvas {
+    max-width: 90%;
+    max-height: 40vh;
+  }
+
+  #bsend {
+    font-size: 1em;
+  }
 }
