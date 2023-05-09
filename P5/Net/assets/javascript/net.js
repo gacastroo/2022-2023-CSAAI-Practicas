@@ -1,12 +1,13 @@
 console.log("Montando la red...")
 
+//fgfg
 const gui = {
   bsend : document.getElementById("bsend"),
   netdelay : document.getElementById("netdelay"),
-  nodos : document.getElementById("nodos"),
   netdelayvalue : document.getElementById("netdelay_value"),
-  nodosvalue : document.getElementById("nodos_value"),
 
+  nNodos : document.getElementById("nNodos"),
+  nNodosvalue : document.getElementById("nNodos_value"),
 }
 
 //-- Obtener elementos del DOM
@@ -14,6 +15,7 @@ const canvas = document.getElementById('canvas');
 const imgBack = document.getElementById('imagesrchide');
 const imgCloud = document.getElementById('cloud');
 const imgFront = document.getElementById('imagesrc');
+const net = document.getElementById('net');
 const ctx = canvas.getContext('2d');
 
 //-- Gestionar el estado el envío
@@ -24,23 +26,24 @@ const state = {
   sendingPackage:0,
   netDelay: 1,
   netDelayDefault: 1,
-  nodos: 2,
-  nodosDefault: 2,
+  nNodos:3,
+  nNodosDefault: 1,
   loop: null
 }
 
 //-- Iniciar el valor del deslizador con el valor de la 
 // variable de estado para el delay
 gui.netdelayvalue.innerHTML = state.netDelay;
-gui.nodosvalue.innerHTML = state.nodosDefault;
+gui.nNodosvalue.innerHTML = state.nNodos;
+
 
 //-- Cuando está disponible cargo la imagen con la nube para represntar el destino
 imgCloud.onload = function () {
 
   //-- Se establece como tamaño del canvas el mismo
   //-- que el de la imagen original
-  canvas.width = imgCloud.width;
-  canvas.height = imgCloud.height;
+  canvas.width = imgFront.width;
+  canvas.height = imgFront.height;
 
   //-- Situar la imagen original en el canvas
   //-- No se han hecho manipulaciones todavía
@@ -60,12 +63,11 @@ gui.netdelay.oninput = () => {
   state.netDelay = gui.netdelay.value;
 }
 
-gui.nodos.oninput = () => {
-  gui.nodosvalue.innerHTML = gui.nodos.value;
-  state.netDelay = gui.nodos.value;
+
+gui.nNodos.oninput = () => {
+  gui.nNodosvalue.innerHTML = gui.nNodos.value;
+  state.nNodos = gui.nNodos.value;
 }
-
-
 
 //-- simulación del envío de la imagen
 //-- la he planteado como que cada línea horizontal de la imagen
@@ -79,6 +81,7 @@ const sendImage = () => {
   //-- que el de la imagen original
   canvas.width = imgFront.width;
   canvas.height = imgFront.height;  
+  
  
   //-- Situar la imagen original en el canvas
   //-- No se han hecho manipulaciones todavía
@@ -99,8 +102,8 @@ const sendImage = () => {
 
   state.loop = setInterval(() => {
 
-    state.totalTime++
-    state.sendingPackage++
+    state.totalTime++ 
+    state.sendingPackage++ 
 
     //-- dimensiones del rectángulo 1
     sx1 = 0;
@@ -114,9 +117,9 @@ const sendImage = () => {
     data = imgData.data
 
     //-- cambiamos el canal a rojo del rectángulo que hemos seleccionado
-    for (let i = 0; i < data.length; i+=4) {
-      data[i] = 0; //-- Canal rojo a 0
-    }
+    //for (let i = 0; i < data.length; i+=4) {
+    //  data[i] = 0; //-- Canal rojo a 0
+    //}
     
     //-- dimensiones del rectángulo 2
     sx2 = sx1;
@@ -124,24 +127,23 @@ const sendImage = () => {
     sw2 = sw1;
     sh2 = state.totalPackages - sh1;
 
-    // if (sh2 > 0) {
-    //   //-- seleccionamos el rectángulo 2
-    //   imgData = ctx.getImageData(sx2, sy2, sw2, sh2);
+     if (sh2 > 0) {
+       //-- seleccionamos el rectángulo 2
+       imgData = ctx.getImageData(sx2, sh2, sw2, sw2);
 
-    //   //-- Obtener el array con todos los píxeles
-    //   data = imgData.data
-  
-    //   for (let i = 0; i < data.length; i+=4) {
-    //     // brillo = (3 * r + 4 * g + b)/8
-    //     //let brillo = (3 * data[i] + 4 * data[i+1] + data[i+2])/8
-    //     //data[i] = brillo;
-    //     //data[i+1] = brillo;
-    //     //data[i+2] = brillo; 
-    //     //data[i] = 0;
-    //     //data[i+1] = 0;
-    //     data[i+2] = 0;         
-    //   }  
-    // }
+       //-- Obtener el array con todos los píxeles
+       data = imgData.data
+      
+       r = 255;
+       g = 200;
+       b = 255;
+       for (let i = 0; i < data.length; i+=4) {
+         data[i] = r;
+         data[i+1] = g;
+         data[i+2] = b;
+               
+       }  
+    }
 
     //-- Poner la imagen modificada en el canvas
     ctx.putImageData(imgData, 0, 0);
@@ -155,7 +157,7 @@ const sendImage = () => {
     }
 
     console.log("Enviando...");
-  }, state.netDelay)
+  }, (state.netDelay * (state.nNodos/1000)))
 }
 
 console.log("Red preparada...");

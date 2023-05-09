@@ -1,11 +1,12 @@
 body {
-    background-color: grey;
-  }
+}
 
 #cloud {
-  display: none;
+display: none;
+width: 400px; ;
+height: 179px;
 }
 
 #imagesrchide {
-  display: none;
+display: none;
 }
