@@ -72,12 +72,21 @@ body {
     max-height: 40vh;
   }
 
+  html, body {
+    margin: 10;
+    padding: 10;
+  }
+
   #bsend {
     font-size: 1em;
   }
 
   h1,h2 {
     font-size: 1em;
+  }
+
+  h1{
+    padding-top: 300px;
   }
 
   p{
